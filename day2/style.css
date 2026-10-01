@@ -1,6 +1,4 @@
-/* =========================
-   1. RESET
-   ========================= */
+/* 1. RESET */
 
 * {
   margin: 0;
@@ -8,10 +6,7 @@
   box-sizing: border-box;
 }
 
-
-/* =========================
-   2. BASE BODY STYLES
-   ========================= */
+/* 2. BASE BODY STYLES */
 
 body {
   font-family: Arial, sans-serif;
@@ -20,10 +15,7 @@ body {
   color: #333;
 }
 
-
-/* =========================
-   3. HEADER
-   ========================= */
+/* 3. HEADER */
 
 header {
   background-color: #333;
@@ -36,18 +28,19 @@ header h1 {
   margin-bottom: 10px;
 }
 
-
-/* =========================
-   4. NAVIGATION
-   ========================= */
+/* 4. NAVIGATION */
 
 nav {
+  background-color: #222;
+  padding: 15px;
+}
+
+nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
-  padding: 15px;
-  background-color: #222;
+  gap: 16px;
+  list-style: none; 
 }
 
 nav a {
@@ -61,10 +54,7 @@ nav a:hover {
   background-color: #555;
 }
 
-
-/* =========================
-   5. MAIN CONTENT
-   ========================= */
+/* 5. MAIN CONTENT */
 
 main {
   max-width: 1000px;
@@ -72,10 +62,7 @@ main {
   padding: 0 20px;
 }
 
-
-/* =========================
-   6. SECTION CARDS
-   ========================= */
+/* 6. SECTION CARDS */
 
 section {
   background-color: white;
@@ -89,27 +76,21 @@ section h2 {
   margin-bottom: 15px;
 }
 
-
-/* =========================
-   7. FEATURES GRID
-   ========================= */
+/* 7. FEATURES GRID */
 
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
+  list-style: none; 
 }
 
-.feature-card {
+.features li {
   background-color: #f4f4f4;
   padding: 20px;
   border-radius: 8px;
 }
-
-
-/* =========================
-   8. TABLE
-   ========================= */
+/* 8. TABLE */
 
 table {
   width: 100%;
@@ -128,10 +109,7 @@ th {
   background-color: #eee;
 }
 
-
-/* =========================
-   9. FORM
-   ========================= */
+/* 9. FORM */
 
 form {
   display: flex;
@@ -168,10 +146,7 @@ button:hover {
   background-color: #555;
 }
 
-
-/* =========================
-   10. SMALL SCREEN
-   ========================= */
+/* 10. SMALL SCREEN */
 
 @media (max-width: 600px) {
 
