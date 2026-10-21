@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Character Counter</title>
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Load the script with defer so it waits for the HTML to load first -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle">Dark mode</button>
+
+      <br /><br />
+
+      <!-- Label and Text Area -->
+      <label for="note-text"><strong>Your Note:</strong></label
+      ><br />
+      <textarea
+        id="note-text"
+        rows="8"
+        cols="40"
+        placeholder="Type your note here..."
+      ></textarea>
+
+      <!-- Counters -->
+      <p id="char-count">0 / 200 characters</p>
+      <p id="word-count">0 words</p>
+
+      <!-- Clear Button -->
+      <button id="clear-btn">Clear Note</button>
+    </div>
+  </body>
+</html>
