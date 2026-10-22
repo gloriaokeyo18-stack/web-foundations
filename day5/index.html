@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Directory</title>
+    <!-- Loads the JavaScript file with defer -->
+    <script src="users.js" defer></script>
+  </head>
+  <body>
+    <h1>User Directory</h1>
+
+    <button id="load-users">Load Users</button>
+
+    <br /><br />
+
+    <label for="filter-input">Filter by name: </label>
+    <input type="text" id="filter-input" placeholder="Type a name..." />
+
+    <!-- Status message area (Loading, Success, Error) -->
+    <p id="status"></p>
+
+    <!-- Empty list for the JavaScript to inject users -->
+    <ul id="users-list"></ul>
+  </body>
+</html>
